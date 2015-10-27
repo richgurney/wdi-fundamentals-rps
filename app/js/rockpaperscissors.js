@@ -53,19 +53,22 @@ function playToFive() {
     console.log("Let's play Rock, Paper, Scissors");
     var playerWins = 0;
     var computerWins = 0;
+    
     while(playerWins < 5 && computerWins < 5) {
         var pMove = getPlayerMove();
         var cMove = getComputerMove();
         var winner = getWinner(pMove, cMove);
         if (winner === "player") {
             playerWins ++;
-            console.log ("You won that game with " + pMove + " against "  + cMove + ". The scores are " + playerWins + " to you and "  + computerWins + " to the  computer.");
+            console.log ("You won that game with  ---" + pMove + "---  against  ---"  + cMove + "---  [SCORES] (" + playerWins + ") to you and ("  + computerWins + ") to the  computer");
         } else if (winner === "computer") {
             computerWins ++;
-            console.log ("You lost that game with "  + pMove + " against " + cMove + ". The scores are "   + playerWins + " to you and "  + computerWins + " to the computer.");
+            console.log ("You lost that game with  ---" + pMove + "---  against  ---"  + cMove + "---  [SCORES] (" + playerWins + ") to you and ("  + computerWins + ") to the  computer");
         } else if (winner === "tie") {
-            console.log ("Thats was a tie. The scores are " + playerWins + " to you and "  + computerWins + " to the computer.");
+            console.log ("Thats was a tie with  ---" + pMove + "---  [SCORES] (" + playerWins + ") to you and (" + computerWins + ") to the  computer");
         }
     }
-    
-    return [playerWins, computerWins];  }
+    return [playerWins, computerWins];
+}
+
+playToFive()

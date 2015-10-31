@@ -65,7 +65,7 @@ function playToFive() {
             computerWins ++;
             console.log ("You lost that game with  ---" + pMove + "---  against  ---"  + cMove + "---  [SCORES] (" + playerWins + ") to you and ("  + computerWins + ") to the  computer");
         } else if (winner === "tie") {
-            console.log ("Thats was a tie with  ---" + pMove + "---  [SCORES] (" + playerWins + ") to you and (" + computerWins + ") to the  computer");
+            console.log ("That was a tie with  ---" + pMove + "---  [SCORES] (" + playerWins + ") to you and (" + computerWins + ") to the  computer");
         }
     }
     return [playerWins, computerWins];
